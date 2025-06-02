@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prince Raj</title>
     <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://kit.fontawesome.com/cb31bfb0c6.js" crossorigin="anonymous"></script>
+    
 </head>
 
 <body>
@@ -34,7 +36,7 @@
     </div>
 
     <!-- MY ABOUT -->
-    <div id="about">
+    <div id="about"  data-aos="fade-up" >
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
@@ -103,11 +105,13 @@
     <div id="services">
         <div class="container">
             <h1>My Services</h1>
-            <div class="services-list">
+            <div class="services-list"data-aos="fade-up">
+ 
 
 
-                <div>
-                    <i class="fas fa-code"></i>
+                <div     data-aos="fade-up"data-aos-delay="100">     
+
+                    <i class="fas fa-code" data-aos="fade-up"></i>
                     <h2>Web Development</h2>
                     <p style="text-align: justify">  I provide top-notch web development services tailored to your needs. From sleek front-end
                         designs to robust back-end functionality, I specialize in creating user-friendly and responsive
@@ -115,7 +119,7 @@
                         your online presence with cutting-edge technology and a touch of creativity.</p>
                     <a href="" style="color: deepskyblue;"> learn more</a>
                 </div>
-                <div>
+                <div data-aos="fade-up" data-aos-delay="200">
                     <i class="fas fa-code"></i>
                     <h2>UI/UX Design</h2>
                     <p style="text-align: justify"> I specialize in providing top-notch UI/UX design services, creating visually appealing and
@@ -127,7 +131,7 @@
                     </p>
                     <a href="" style="color: deepskyblue;"> learn more </a>
                 </div>
-                <div>
+                <div data-aos="fade-up" data-aos-delay="300">
                     <i class="fas fa-code"></i>
                     <h2>App Development </h2>
                     <p style="text-align: justify">    I specialize in providing comprehensive app development services, crafting innovative and
@@ -149,7 +153,7 @@
         <div class="container">
             <h1 class="sub-title">My Work</h1>
             <div class="work-list">
-                <div class="work">
+                <div class="work"data-aos="fade-up" data-aos-delay="100">
                     <img src="images/work-1.png" alt="" />
                     <img src="images/work-11.png" alt="" />
                     <img src="images/work-111.png" alt="" />
@@ -168,7 +172,7 @@
                                 class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
-                <div class="work"data-aos="fade-up">
+                <div class="work"data-aos="fade-up" data-aos-delay="200">
                     <img src="images/work-2.png" alt="" />
                     <img src="images/work-22.png" alt="" />
                     <img src="images/work-222.png" alt="" />
@@ -189,7 +193,7 @@
                                 class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
-                <div class="work"data-aos="fade-up">
+                <div class="work"data-aos="fade-up"data-aos-delay="100">
                     <img src="images/work-3.png" alt="" />
                     <img src="images/work-33.png" alt="" />
                     <img src="images/work-333.png" alt="" />
@@ -217,7 +221,7 @@
     </div>
 
     <!-- Contact -->
-    <div id="contact">
+    <div id="contact" data-aos="fade-up">
         <div class="container">
             <div class="row">
                 <div class="contact-left">
@@ -240,7 +244,7 @@
                     <a href="javascript:void(0)" download class="btn btn2">Download Resume</a>
                 </div>
 
-                <div class="contact-right">
+                <div class="contact-right"  data-aos="fade-up">
                     <form name="submit-to-google-sheet">
                         <input type="text" name="Name" placeholder="Your Name" required />
                         <input type="email" name="Email" placeholder="Your Email" required />
@@ -292,6 +296,10 @@
                                     .catch(error => console.error('Error!', error.message))
                             })
                         </script>
+                         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
 
 </body>
